@@ -1,0 +1,10 @@
+TYPE,ARG1,ARG2,ARG3,ARG4
+AGENT,Іван,Петренко,+380501234567
+CLIENT,Марія,Сидоренко,maria@example.com
+PROPERTY,вул. Хрещатик 1,APARTMENT,150000,75.5
+AGENT,Василь,Лисенко,+380998765432
+CLIENT,Олена,Іванова,olena@gmail.com
+PROPERTY,вул. Велика Васильківська 5,OFFICE,500000,200.0
+AGENT,Андрій,,+380123123123
+CLIENT,Петро,Петренко,invalid-email
+PROPERTY,вул. Зелена,HOUSE,0,150.0

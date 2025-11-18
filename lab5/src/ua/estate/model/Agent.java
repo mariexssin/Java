@@ -13,7 +13,7 @@ public record Agent(String firstName, String lastName, String contactInfo) imple
 
     public static final Comparator<Agent> BY_CONTACT_INFO = (a1, a2) -> a1.contactInfo().compareTo(a2.contactInfo());
 
-    public Agent {
+    public Agent throws InvalidDataException {
         Utils.validateString(firstName, "Ім'я агента");
         Utils.validateString(lastName, "Прізвище агента");
         Utils.validateString(contactInfo, "Контакти агента");

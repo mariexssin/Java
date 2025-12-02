@@ -12,7 +12,7 @@ public record Agent(String firstName, String lastName, String contactInfo) {
         validator.checkString(contactInfo, "contactInfo");
 
         if (contactInfo != null) {
-            validator.check(contactInfo.length() >= 10, "contactInfo", "має містити щонайменше 10 символів");
+            validator.check(contactInfo.length() >= 5, "contactInfo", "занадто короткий (мінімум 5 символів)");
         }
 
         validator.throwIfInvalid();

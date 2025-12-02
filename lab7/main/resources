@@ -1,0 +1,4 @@
+data.path.json=data/agents.json
+data.path.yaml=data/properties.yaml
+
+generation.count=5

@@ -6,7 +6,6 @@ import ua.estate.exception.InvalidDataException;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.regex.Pattern;
 
 public class EntityValidator {
     private static final Logger logger = LoggerFactory.getLogger(EntityValidator.class);
@@ -16,7 +15,6 @@ public class EntityValidator {
 
     public EntityValidator(String entityName) {
         this.entityName = entityName;
-        logger.info("Початок створення/валідації об'єкта: {}", entityName);
     }
 
     public void check(boolean condition, String field, String errorMessage) {

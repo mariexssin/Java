@@ -12,7 +12,7 @@ public record Client(String firstName, String lastName, String email) {
         
         validator.checkString(email, "email");
         if (email != null && !email.contains("@")) {
-            validator.check(false, "email", "має некоректний формат");
+            validator.check(false, "email", "некоректний формат (відсутній @)");
         }
 
         validator.throwIfInvalid();

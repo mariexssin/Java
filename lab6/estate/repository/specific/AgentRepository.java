@@ -6,7 +6,7 @@ import ua.estate.repository.functional.IdentityExtractor;
 
 import java.util.List;
 import java.util.logging.Logger;
-import java.util.stream.Collectors; // Обов'язковий імпорт для collect
+import java.util.stream.Collectors; 
 
 public class AgentRepository extends GenericRepository<Agent> {
 

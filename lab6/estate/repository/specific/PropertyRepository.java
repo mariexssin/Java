@@ -22,9 +22,9 @@ public class PropertyRepository extends GenericRepository<Property> {
     public List<Property> findByPriceRange(double minPrice, double maxPrice) {
         logger.info(String.format("Пошук нерухомості в діапазоні цін: [%.2f - %.2f]", minPrice, maxPrice));
         
-        return getAll().stream() // Створення послідовного стріму
+        return getAll().stream() 
                 .filter(p -> p.price() >= minPrice && p.price() <= maxPrice) // filter
-                .collect(Collectors.toList()); // collect (термінальна операція)
+                .collect(Collectors.toList()); 
     }
 
     public double getAverageAreaByType(PropertyType type) {
@@ -33,7 +33,7 @@ public class PropertyRepository extends GenericRepository<Property> {
         return getAll().stream()
                 .filter(p -> p.type() == type)
                 .mapToDouble(Property::area) // mapToDouble
-                .average() // термінальна операція (повертає OptionalDouble)
+                .average() 
                 .orElse(0.0);
     }
 }
